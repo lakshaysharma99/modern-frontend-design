@@ -1,29 +1,25 @@
+import React from 'react'
+import { Footer,Blog, Possibiity, Features, WhatGPT3, Header  } from './containers'
+import { Cta, Brand, Navbar } from './components';
 import './App.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src="Octocat.png" className="App-logo" alt="logo" />
-        <p>
-          GitHub Codespaces <span className="heart">♥️</span> React
-        </p>
-        <p className="small">
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </p>
-      </header>
+    <div>
+      <div className='gradient_bg'>
+        <Navbar />
+        <Header />
+      </div>
+      <Brand />
+      <WhatGPT3 />
+      <Features />
+      <Possibiity />
+      <Cta />
+      <Blog />
+      <Footer />
     </div>
-  );
+   
+  )
 }
 
-export default App;
+export default App
